@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import MovieList from './components/MovieList'
+import MovieForm from './components/MovieForm'
 
 function App() {
 
@@ -7,6 +8,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<MovieList/>}/>
+        <Route path="/form" element={<MovieForm/>}/>
       </Routes>
     </BrowserRouter>
   )
