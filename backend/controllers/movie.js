@@ -1,7 +1,7 @@
 import db from '../db.js'
 
 export const getMovies = (_, res) => {
-  const query = 'SELECT * FROM ovies';
+  const query = 'SELECT * FROM movies';
 
   db.query(query, (err, data) => {
     if (err) return res.json(err);
